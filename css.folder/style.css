@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+/* golobal varibles*/
+:root{
+   --color-indigo: #6610f2;
+   --color-green: #198754;
+   --color-gray:#6c757d;
+   --color-white:#fff;
+   --color-black:#222;
+   --background-two:#ebebeb;
+}
+/*styling the header*/
+header{
+    position: absolute;
+    
+    background-color: var(--color-black);
+    width: 100%;
+    color: var(--color-white);
+
+}
+header .container{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+header .container .logoandmenu{
+    display: flex;
+    flex-direction: row;
+
+}
+header .container .logoandmenu .logo{
+    margin-right: 70px;
+
+}
+header .container .logoandmenu .logo h2{
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 700;
+}
+header .container .logoandmenu .menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 9px;
+
+
+}
+header .container .logoandmenu .menu ul li a{
+    text-decoration: none;
+    color: var(--color-white);
+    margin-right: 31px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    padding: 10px 0px;
+    display: block;
+    transition: 0.2s;
+}
+header .container .logoandmenu .menu ul li .home{
+    color: var(--color-green);
+    border-bottom: 2px solid var(--color-green);
+}
+header .container .logoandmenu .menu ul li a:hover{
+    color: var(--color-green);
+    border-bottom: 2px solid var(--color-green);
+}
+.conteiner .info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.container .info .icon{
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-white);
+    border-radius: 50px;
+
+}
+.container .info .icon i{
+    color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* media queries*/
+/*small dvies*/
+@media (min-width: 768px){
+    .container {
+        width: 750px;
+          
+    }
+}
+    /*medium dives*/
+    @media (min-width: 992px){
+        .container {
+            width: 970px;
+        }
+        }
+    
+    /*larger dives*/
+    
+    @media (min-width: 1200px){
+    .container {
+        width: 1360px;
+      
+    }
+    }
