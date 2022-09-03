@@ -587,25 +587,38 @@ table .two , .table .four{
 .services .container .boxs{
     margin-top: 100px;
     margin-bottom: 100px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
 }
 .services .container .boxs .box{
-    width: 400px;
-   
+    width: 48%;
     border: 2px solid transparent;
     background-color: var(--color-white);
     padding: 20px 25px;
     position: relative;
     border-radius: 20px;
+    position: relative;
+    height: 581px;
+    transition: 0.3s;
+    overflow: hidden;
+    
 }
+
 .services .container .boxs .box .head{
-    display: flex;
-    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 50px;
     justify-content: space-between;
+    display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--color-black);
+    padding-bottom: 20px
 }
 .services .container .boxs .box .head .pracing{
     background-color: var(--color-indigo);
     border-radius: 14px;
+    transition: 0.3s;
 }
 .services .container .boxs .box .head .pracing p{
     padding: 5px 10px;
@@ -617,8 +630,12 @@ table .two , .table .four{
     border: 1px solid gray;
     margin-top: 30px;
     border-radius: 20px;
-    
     width: 46%;
+    transition: 0.3s;
+}
+.services .container .boxs .box .btn:hover{
+background-color: var(--color-green);
+
 }
 .services .container .boxs .box .btn a{
     padding: 6px;
@@ -630,6 +647,426 @@ table .two , .table .four{
     display: block;
     text-align: center;
 }
+.services .container .boxs .box .btn:hover a{
+    color: var(--color-white);
+}
+.services .container .boxs .box .icon{
+    padding: 156px 68px;
+    width: 61%;
+    background-color: var(--color-gray);
+    text-align: center;
+    transform: rotateZ(320deg);
+    position: absolute;
+    right: -88px;
+    top: 46%;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid var(--color-gray);
+    transition: 0.3s;
+}
+.services .container .boxs .box .icon i{
+    font-size: 115px;
+    transition: 0.3s;
+}
+.services .container .boxs .box:hover{
+    border: 2px solid var(--color-green);
+}
+.services .container .boxs .box:hover .head .pracing{
+    background-color: var(--color-green);
+}
+.services .container .boxs .box:hover .icon{
+    background-color: var(--color-green);
+    border: 1px solid var(--color-green);
+}
+.services .container .boxs .box:hover .icon i{
+    color: var(--color-white);
+}
+.services .container .boxs .b 
+{
+    margin-top: 30px;
+}
+.services .container .boxs .c {
+    margin-top: -10px;
+}
+.services .container .boxs .d{
+    margin-top: 51px;
+}
+@media(max-width:999px){
+    .services .container .boxs{
+        flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }    
+.services .container .boxs .box{
+    margin-bottom: 40px;
+    width: 84%;
+    }
+    .services .container .boxs .box .icon {
+        padding: 82px 40px;
+        width: 48%;
+        background-color: var(--color-gray);
+        text-align: center;
+        transform: rotateZ(320deg);
+        position: absolute;
+        right: -36px;
+        top: 71%;
+        border-radius: 10px;
+        background-color: #fff;
+        border: 1px solid var(--color-gray);
+        transition: 0.3s;
+    }
+    .services .container .boxs .box .icon i {
+        font-size: 44px;
+    }
+}
+/* styling project area*/
+.project .container{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto; 
+    padding-top: 200px;
+    padding-bottom: 200px; 
+}
+.project .container .content{
+    display: flex;
+    justify-content: flex-end;
+}
+@media(max-width:500px){
+    .project .container .content{
+        justify-content: center;
+    }
+}
+.project .container .title{
+    width: 60%;
+    background-color: var(--color-green);
+    padding: 21px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 58px;
+}
+@media(max-width:500px){
+    .project .container .title{
+        width: 80%;
+    }
+}
+.project .container .title .desk{ 
+width: 150px;
+height: 150px;
+border-radius: 50%;
+overflow: hidden;
+margin-right: 20px;
+}
+.project .container .title .desk img{
+height: 100%;
+width: 100%;
+}
+.project .container .title h1{
+font-size: 40px;
+font-weight: 700;
+color: var(--color-white);
+}
+
+.project .container .areapro{
+    
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.project .container .areapro .box{
+
+    width: 32%;
+    border: 2px solid transparent;
+    background-color: rgb(230, 224, 224);
+    padding: 20px 25px;
+    border-radius: 20px;
+    height: 581px;
+    transition: 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+.project .container .areapro .box:hover{
+    border: 2px solid var(--color-green);
+    background-color: var(--color-white);
+}
+.project .container .areapro .box .head p{
+    font-size: 13px;
+    margin-bottom: 15px;
+    color: var(--color-green);
+}
+.project .container .areapro .box .head h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.project .container .areapro .box .product{
+    border-radius: 35px;
+    width: 80%;
+    height: 343px;
+    overflow: hidden;
+    position: absolute;
+    top: 40%;
+    transform: rotate(28deg);
+    display: block;
+    transition: 0.5s;
+}
+.project .container .areapro .box:hover .product{
+    transform: rotate(0deg);
+}
+.project .container .areapro .box .product img{
+    width: 100%;
+}
+
+@media(max-width:999px){
+    .project .container .areapro{
+        justify-content: center;
+    }
+    .project .container .areapro .box{
+        width: 60%;
+        margin-bottom: 30px;
+    }
+}
+/* styling contact area */
+.contact{
+    background-color: #bebebe;
+}
+
+.contact .container{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto; 
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.contact .container .content{
+    display: flex;
+    justify-content: flex-start;
+}
+.contact .container .content .title{
+    width: 45%;
+    background-color: var(--color-green);
+    padding: 9px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.contact .container .content  .title .say{ 
+width: 150px;
+height: 150px;
+border-radius: 50%;
+overflow: hidden;
+margin-right: 20px;
+}
+.contact .container .content  .title .say img{
+height: 100%;
+width: 100%;
+}
+.contact .container .content  .title h1{
+font-size: 40px;
+font-weight: 700;
+color: var(--color-white);
+text-transform: capitalize;
+font-size: 60px;
+}
+.contact .container .info{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.contact .container .info .box{
+    background-color: #fff;
+    padding: 68px 43px;
+    display: flex;
+    flex-direction: row;
+}
+.contact .container .info .box .area-1{
+    border-right: 1px solid var(--color-black);
+    padding-right: 25px
+}
+.contact .container .info .box h3{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.contact .container .info .box .links{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contact .container .info .box .links .link1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contact .container .info .box .links .link2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.contact .container .info .box .links .web{
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 21px;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+.contact .container .info .box .links .web a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: gray;
+    font-weight: 500;
+}
+.contact .container .info .box .web:hover{
+    background-color:var(--color-green);
+}
+.contact .container .info .box .web:hover a{
+    color: var(--color-white);
+}
+.contact .container .info .box .social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0
+}
+.contact .container .info .box .social .face{
+    border-radius: 50%;
+    border: 0.5px solid gray;
+    padding: 10px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+.contact .container .info .box .social .face:hover{
+    background-color: var(--color-green);
+}
+.contact .container .info .box .social .face:hover i{
+    color: var(--color-white);
+}
+.contact .container .info .box p{
+    font-size: 20px;
+    color: gray;
+}
+
+.contact .container .info .one  .area-2{
+    padding-left: 25px
+}
+.contact .container .info .one  .area-2 h3{
+    margin: 25px 15px;
+}
+.contact .container .info .one   .area-2  a{
+    text-decoration: none;
+    color: var(--color-gray);
+}
+.contact .container .info .two input{
+    padding: 10px;
+    font-size: 20px;
+}
+.contact .container .info .two{
+    background-color: initial;
+}
+.contact .container .info .two .tools{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;  
+    margin-bottom: 26px;  
+}
+.contact .container .info .two .tool{
+    padding: 32px 43px;
+    background: #fff;
+    border: 1px solid gray;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.contact .container .info .two .tool:hover{
+    background-color: var(--color-green);
+}
+.contact .container .info .two .tool:hover i{
+    color: var(--color-white);
+}
+.contact .container .info .two textarea{
+    border: 3px solid var(--color-black);
+     transition: 0.5s;
+}
+.contact .container .info .two textarea:hover{
+    border-color: var(--color-green);
+}
+.contact .container .info .two .button{
+    display: flex;
+    justify-content: flex-end;
+}
+.contact .container .info .two .btn{
+    border: 1px solid gray;
+    width: 24%;
+    text-align: center;
+    border-radius: 20px;
+    padding: 4px 6px;
+    margin-top: 15px;
+    background-color: var(--color-green);
+    transition: 0.5s;
+}
+.contact .container .info .two .btn:hover{
+    background-color: var(--color-indigo);
+}
+.contact .container .info .two .btn a{
+    background-color: transparent;
+    text-decoration: none;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+@media(max-width:999px){
+    .contact .container .content{
+        justify-content: center;
+    }
+    .contact .container .content .title{
+        width: 90%;
+    }
+    .contact .container .info{
+        flex-direction: column;
+    }
+    .contact .container .info .box{
+        width: 100%;
+        justify-content: center;
+    }
+    .contact .container .info .one{
+        flex-direction: column;
+    }
+    .contact .container .info .box .area-1{
+        border-bottom: 1px solid var(--color-black);
+        border-right: none;
+    }
+    .one .area-2 {
+        padding-left: 0px;
+    }
+    .contact .container .info .two .button{
+        justify-content: center;
+    }
+    .contact .container .info .two .btn{
+        width: 80%;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
 /* media queries*/
 /*small dvies*/
 @media (min-width: 768px){
