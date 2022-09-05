@@ -14,6 +14,9 @@
    --color-black:#222;
    --background-two:#ebebeb;
 }
+html{
+    scroll-behavior: smooth;
+}
 /*styling the header*/
 
 header{
@@ -501,12 +504,7 @@ table .two , .table .four{
     margin-right: auto; 
     padding-top: 200px;
     padding-bottom: 200px; 
-    /*
-    display: flex;
-    flex-wrap: wrap;
     
-    justify-content: space-between;
-*/
 }
 
 .companies .container .title{
@@ -960,8 +958,17 @@ font-size: 60px;
     padding-left: 25px
 }
 .contact .container .info .one  .area-2 h3{
-    margin: 25px 15px;
+    margin: 0px 15px;
+    margin-bottom: 20px;
 }
+.contact .container .info .one  .area-2 h3:nth-child(2){
+    margin-top: 10px;
+}
+.contact .container .info .one  .area-2 h3:nth-child(3){
+    margin-top: 10px;
+}
+
+
 .contact .container .info .one   .area-2  a{
     text-decoration: none;
     color: var(--color-gray);
@@ -1059,9 +1066,28 @@ font-size: 60px;
 
     
 }
-
-
-
+/* styling footer area */
+footer .container{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto; 
+    padding-top: 50px;
+    padding-bottom:50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .container p{
+    font-size: 13px;
+    font-weight: 400;
+    color: gray;
+}
+footer .container p a{
+    text-decoration: none;
+    color: gray;
+    font-weight: 700;
+}
 
 
 
